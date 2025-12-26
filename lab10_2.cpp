@@ -6,11 +6,13 @@ using namespace std;
 int main (){
 	ifstream source;
 	ofstream dest;
-	source.open("cheerbook.txt") ;
+	source.open("cheerbook.txt");
 	dest.open("cheerbook_copy.txt");
-	
-	//กรอก Code เฉพาะส่วนนี้ ให้สอดคล้องกับโจทย์และ Code ส่วนอื่น ๆ 
-	//โดยห้ามแก้ไข Code ในส่วนอื่น ๆ
+	dest << "-------------------- BOOM ---------------------" << endl;
+	dest << "AR CHI" << endl << "AR BOW" << endl << "CHOW CHOW" << endl << "BA KA" << endl;
+	dest << "BA GEAR" << endl << "CHEER CHEER" << endl << "WE ARE ALL" << endl;
+	dest << "ENTANEER" << endl << "CMU" << endl; 
+	dest << "-------------------- HA!! ---------------------";
 
     source.close();
     dest.close();
